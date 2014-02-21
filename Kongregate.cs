@@ -10,9 +10,7 @@ public class Kongregate : MonoBehaviour {
 	public static string username;
 	public static string gameAuthToken;
 	
-	// CREATE A FUNCTION A
-	
-	// Use this for initialization
+	// Automatic Initialization
 	void Start () {
 		
 		if (!i)
@@ -26,6 +24,8 @@ public class Kongregate : MonoBehaviour {
 			  		" kongregateUnitySupport.initAPI('" + gameObject.name + "','OnKongregateAPILoaded');" +
 			   "};"
 			);
+			
+
 			i = this;
 			DontDestroyOnLoad(this);
 		}
@@ -36,6 +36,7 @@ public class Kongregate : MonoBehaviour {
 		// Here I set a static variable which I can
 		// check to know if Kongregate connection is ready
 		isKongregateReady = true;
+		
 		// Kongregate returns a char delimited string
 		// composed of userId|username|gameAuthToken
 		// Here I just store them for easier access
@@ -45,13 +46,13 @@ public class Kongregate : MonoBehaviour {
 		gameAuthToken = parms[2]; // string	
 	}
 	
-		// CREATE A FUNCTION B
-
+	// CUSTOM CODE
+		
 	// Use this somewhere in your code
-	public static void UpdateScore(int score)
+	public static void ExampleUpdateScore(int score)
 	{
 		// This is where you make high scores happen!
-		Application.ExternalCall("kongregate.stats.submit", "Mikes", score);
+		Application.ExternalCall("kongregate.stats.submit", "score", score);
 		
 	}
 
