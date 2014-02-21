@@ -45,7 +45,8 @@ public class Kongregate : MonoBehaviour {
 		gameAuthToken = parms[2]; // string	
 	}
 	
-	
+		// CREATE A FUNCTION B
+
 	// Use this somewhere in your code
 	public static void UpdateScore(int score)
 	{
