@@ -10,6 +10,8 @@ public class Kongregate : MonoBehaviour {
 	public static string username;
 	public static string gameAuthToken;
 	
+	// CREATE A FUNCTION A
+	
 	// Use this for initialization
 	void Start () {
 		
