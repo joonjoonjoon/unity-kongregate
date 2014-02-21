@@ -45,7 +45,7 @@ public class Kongregate : MonoBehaviour {
 	
 	public static void UpdateScore(int score)
 	{
-		Application.ExternalCall("kongregate.stats.submit", "Nice Thingies", score);
+		Application.ExternalCall("kongregate.stats.submit", "Mikes", score);
 		
 	}
 
