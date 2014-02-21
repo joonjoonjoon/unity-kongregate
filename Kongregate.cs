@@ -43,8 +43,11 @@ public class Kongregate : MonoBehaviour {
 		gameAuthToken = parms[2]; // string	
 	}
 	
+	
+	// Use this somewhere in your code
 	public static void UpdateScore(int score)
 	{
+		// This is where you make high scores happen!
 		Application.ExternalCall("kongregate.stats.submit", "Mikes", score);
 		
 	}
